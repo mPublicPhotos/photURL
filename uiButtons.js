@@ -26,8 +26,8 @@ create the buttons as png image
         this.myStage.enableMouseOut;
 
         var button = new Image();
-        button.src = './button.png';
-
+        //button.src = './button.png';
+        button.src = 'https://cdn.jsdelivr.net/gh/mPublicPhotos/photURL/button.png';
         button.addEventListener("load", this.buttonLoad.bind(this));
    
     }
