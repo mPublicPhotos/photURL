@@ -17,6 +17,7 @@ instantiate class getShowImages (the real workhorse)
     for (var i = 0; i < places.length; i++) {
     
       const URL = remoteURL + 'photos/?albumName='+ places[i].posit;
+      console.log(URL);
       try {
         let fetchResult = await fetch(URL)
         receivedUrls = await fetchResult.json();
