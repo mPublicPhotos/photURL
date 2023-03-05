@@ -67,6 +67,7 @@ async showPic(){
     for (var i = 0; i < this.myKuvat.length; i++ ) {
           
             myImage = new Image();
+            myImage.crossOrigin = "anonymous";
             myImage.src = this.myKuvat[i];//manyItems[i].mediaItem.baseUrl;
             //console.log(myImage.src);
             this.kuvaTaulu.push(myImage);  
