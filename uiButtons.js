@@ -27,8 +27,8 @@ create the buttons as png image
 
         var button = new Image();
         //button.src = './button.png';
-        button.crossOrigin = "true";
         button.src = 'https://cdn.jsdelivr.net/gh/mPublicPhotos/photURL/button.png';
+        button.crossOrigin = "true";
         button.addEventListener("load", this.buttonLoad.bind(this));
    
     }
