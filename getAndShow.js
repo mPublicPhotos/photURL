@@ -25,6 +25,7 @@ class getShowImages{
     }
     /* 
     In this method we create stage, its background and necessary info text
+    like album name number of photos
     */
 
     createStage(){
@@ -66,9 +67,8 @@ async showPic(){
     for (var i = 0; i < this.myKuvat.length; i++ ) {
           
             myImage = new Image();
-            myImage.crossOrigin = "anonymous";
+            myImage.crossOrigin = "Anonymous";
             myImage.src = this.myKuvat[i];//manyItems[i].mediaItem.baseUrl;
-            //console.log(myImage.src);
             this.kuvaTaulu.push(myImage);  
            
             if (i==0) {
@@ -127,6 +127,7 @@ Finally we position image vertically in the midle of frame.
  Next button pressed also show the next photo
 */
     showRight(){
+       
         this.counter++;
         var bitMapImage;
         if (this.counter >= this.kuvaTaulu.length)
