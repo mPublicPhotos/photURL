@@ -4,6 +4,7 @@ var albumIds = [];
 var pageToken = null;
 const pageSize = 30;
 let albums = [];
+// remoteURL point to amazon AWS lamda function
 
 const remoteURL = 'https://e2b994bth5.execute-api.eu-north-1.amazonaws.com/prod/';
 
@@ -17,7 +18,7 @@ instantiate class getShowImages (the real workhorse)
     for (var i = 0; i < places.length; i++) {
     
       const URL = remoteURL + 'photos/?albumName='+ places[i].posit;
-      console.log(URL);
+      //console.log(URL);
       try {
         let fetchResult = await fetch(URL)
         receivedUrls = await fetchResult.json();
