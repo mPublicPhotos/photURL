@@ -48,7 +48,7 @@ class getShowImages{
 
         //mouse over text
         var mouseText = new createjs.Text(" ","12px Arial", "#fffff0");
-        mouseText.text = "(mouse over) ";
+        mouseText.text = "( mouse over ) ";
         mouseText.y = this.frameProp.height + 30;
         mouseText.x = 510;
         mouseText.txtBaseline ="alphapetic";
