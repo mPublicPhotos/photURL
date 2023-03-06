@@ -40,7 +40,6 @@ class getShowImages{
         // album text
         var caption = new createjs.Text(" ","12px Arial", "#fffff0");
         caption.text = "album: "+ this.albumName;
-       console.log(caption.text);
         caption.y = this.frameProp.height + 30;
         caption.x = 20;
         caption.txtBaseline ="alphapetic";
